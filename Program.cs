@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace MoodAnalyser
+namespace MoodAnalyser1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to MoodAnalyser!");
+            Console.WriteLine("Welcome to MoodMAnalyser!");
+            Console.WriteLine("Mood Analyser Problem!");
         }
     }
 }
