@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnalyser1;
 
-namespace TestProject1
+namespace UnitTest
 {
     [TestClass]
     public class UnitTest1
@@ -71,8 +71,6 @@ namespace TestProject1
             {
                 Assert.AreEqual(expected, ex.Message);
             }
-
         }
     }
 }
-
