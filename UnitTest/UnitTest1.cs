@@ -1,24 +1,24 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnalyser1;
 
-namespace TestProject1
+namespace UnitTest
 {
     [TestClass]
     public class UnitTest1
     {
-        MoodAnalyser moodAnalyser;
-        string message = " I am in happy Mood";
+        //MoodAnalyser moodAnalyser;
+        //string message = " I am in happy Mood";
         [TestInitialize]
         public void SetUp()
         {
-            moodAnalyser = new MoodAnalyser(message);
+            //moodAnalyser = new MoodAnalyser(message);
         }
         [TestMethod]
         public void TestMethodForHappyMood()
 
         {
             string expected = "happy";
-
+            MoodAnalyser moodAnalyser = new MoodAnalyser("I am in happy Mood");
             string actual = moodAnalyser.AnalyzeMood();
             Assert.AreEqual(expected, actual);
         }
